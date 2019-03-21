@@ -45,6 +45,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/gps.xml:system/etc/gps.xml \
     $(LOCAL_PATH)/gps_daemon.sh:system/bin/gps_daemon.sh
 
+# Xposed configuration
+PRODUCT_COPY_FILES += \
+        device/samsung/i9300/xposed.prop:system/xposed.prop
+
 PRODUCT_PACKAGES += \
 	gps.smdk4x12
 
